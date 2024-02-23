@@ -15,3 +15,4 @@ for (let q = 0; q < str.length; q++){
 >>>>>>> 9d777fb3111b825010b0e5ac7bc4ec867eb7d129
 }
 console.log(result) 
+
