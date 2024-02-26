@@ -31,7 +31,7 @@ mostchars.push(chars[most]);
 
 //console.log(chars)
 //console.log(countchars)
-console.log(mostchars);
+console.log(mostchars,':', max);
 
 //OR 2-With Object
 
