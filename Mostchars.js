@@ -1,3 +1,5 @@
+//1-Without Object
+
 const word = "hi! this is coding font";
 const chars = [];
 const countchars = [];
@@ -30,3 +32,26 @@ mostchars.push(chars[most]);
 //console.log(chars)
 //console.log(countchars)
 console.log(mostchars);
+
+//OR 2-With Object
+
+const texttt = "hi this is coding front";
+const charss = texttt.split("");
+let charscount = {};
+
+for (i = 0; i < charss.length; i++) {
+  if (charscount[charss[i]]) {
+    charscount[charss[i]] += 1;
+  } else if (charss[i] !== " ") {
+    charscount[charss[i]] = 1;
+  }
+}
+let mostcharscount = -1;
+let mostcharss = "";
+for (key in charscount) {
+  if (charscount[key] > mostcharscount) {
+    (mostcharscount = charscount[key]), (mostcharss = key);
+  }
+}
+
+console.log(mostcharss, ":", mostcharscount);
